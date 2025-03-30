@@ -1,51 +1,116 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Puskesmas Bandarharjo</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Puskesmas Bandarharjo</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background: #f2f2f2;
+    }
+    .content {
+      flex: 1;
+    }
+    header {
+      margin-bottom: 20px;
+    }
+    .hero {
+      background: url('img/hero.jpg') no-repeat center center/cover;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+    .hero-content {
+      background: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .about {
+      background-color: #ffffff;
+      width: 100%;
+      padding: 60px 20px;
+      margin-top: 40px;
+      border-radius: 5px;
+      border: 1px solid rgba(0, 0, 0, 0.005); /* Sangat samar */
+      box-shadow: 0 0.1px 0.2px rgba(0, 0, 0, 0.003); /* Bayangan yang hampir tidak terlihat */
+    }
+    .btn-custom {
+      background-color: #1abc9c;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .btn-custom:hover {
+      background-color: #16a085;
+    }
+    footer {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: auto;
+    }
+  </style>
 </head>
 <body>
-    <!-- HEADER -->
-    <header>
-        <a class="navbar-brand">
-           
-          </a>
-        <div class="container">
-            <img src="img/BANDARHARJO.png" alt="Logo Puskesmas" height="70">
-            <h1>Puskesmas Bandarharjo</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html" class="active">Beranda</a></li>
-                    <li><a href="profile.html">Profil</a></li>
-                    <li><a href="layanan.html">Layanan</a></li>
-                    <li><a href="kontak.html">Kontak</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/BANDARHARJO.png" alt="Logo Puskesmas" height="40">
+        Puskesmas Bandarharjo
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="profile.html">Profil</a></li>
+          <li class="nav-item"><a class="nav-link" href="layanan.html">Layanan</a></li>
+          <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-    <!-- HERO SECTION -->
+  <div class="content">
     <section class="hero">
-        <div class="hero-content">
-            <h2>Selamat Datang di Puskesmas Bandarharjo</h2>
-            <p>Kesehatan Anda adalah Prioritas Kami</p>
-            <a href="layanan.html" class="btn">Lihat Layanan</a>
-        </div>
+      <div class="hero-content">
+        <h2>Selamat Datang di Puskesmas Bandarharjo</h2>
+        <p>Kesehatan Anda adalah Prioritas Kami</p>
+        <a href="layanan.html" class="btn btn-custom">Lihat Layanan</a>
+      </div>
     </section>
 
-    <!-- ABOUT SECTION -->
     <section class="about">
-        <div class="container">
-            <h2>Tentang Kami</h2>
-            <p>Puskesmas Bandarharjo memberikan layanan kesehatan berkualitas untuk masyarakat dengan fasilitas terbaik dan tenaga medis profesional.</p>
-        </div>
+      <div class="container text-center">
+        <h2>Tentang Kami</h2>
+        <p>Puskesmas Bandarharjo memberikan layanan kesehatan berkualitas untuk masyarakat dengan fasilitas terbaik dan tenaga medis profesional.</p>
+      </div>
     </section>
+  </div>
 
-    <!-- FOOTER -->
-    <footer>
-        <p>&copy; 2024 Puskesmas Bandarharjo. All Rights Reserved.</p>
-    </footer>
+  <footer>
+    <p>&copy; 2024 Puskesmas Bandarharjo. All Rights Reserved.</p>
+  </footer>
 </body>
 </html>
